@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Basic Admin tool" />
+		<Option makefile="MakeFile" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="D:\Div\Full tilgang\SourceDS\orangebox\tf\addons\bat\bin\bat_mm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="D:\Div\Full tilgang\SourceDS\orangebox\tf\addons\bat\bin" />
+				<Option type="3" />
+				<Option compiler="msvc8" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_CRT_NONSTDC_NO_DEPRECATE" />
+					<Add option="/DWIN32" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_USRDLL" />
+					<Add option="/DSAMPLE_MM_EXPORTS" />
+					<Add option="/W3" />
+					<Add option="/ZI" />
+					<Add option="/O0" />
+					<Add option="/MTd" />
+				</Compiler>
+				<Linker>
+					<Add option="/NODEFAULTLIB:libcmt.lib" />
+					<Add option="/pdb:D:\Div\Full tilgang\SourceDS\orangebox\tf\addons\bat\bin\bat_mm.pdb" />
+					<Add library="tier0" />
+					<Add library="vstdlib" />
+					<Add library="mysqlclient" />
+					<Add library="mysys" />
+					<Add library="zlib" />
+					<Add library="ws2_32" />
+					<Add library="msvcprt" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output=".\Release\bat_mm" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".\Release" />
+				<Option type="3" />
+				<Option compiler="msvc8" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_CRT_NONSTDC_NO_DEPRECATE" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_USRDLL" />
+					<Add option="/DSAMPLE_MM_EXPORTS" />
+					<Add option="/W3" />
+					<Add option="/Zi" />
+					<Add option="/MT" />
+				</Compiler>
+				<Linker>
+					<Add option="/NODEFAULTLIB:LIBCMTD.lib" />
+					<Add option="/INCREMENTAL:NO" />
+					<Add option="/pdb:.\Release\bat_mm.pdb" />
+					<Add library="tier0" />
+					<Add library="vstdlib" />
+				</Linker>
+			</Target>
+			<Target title="Release3 Win32">
+				<Option output=".\Release3\bat_mm" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".\Release3" />
+				<Option type="3" />
+				<Option compiler="msvc8" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_CRT_NONSTDC_NO_DEPRECATE" />
+					<Add option="/DWIN32" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_USRDLL" />
+					<Add option="/DSAMPLE_MM_EXPORTS" />
+					<Add option="/W3" />
+					<Add option="/Zi" />
+					<Add option="/O0" />
+					<Add option="/MTd" />
+				</Compiler>
+				<Linker>
+					<Add option="/pdb:.\Release3\bat_mm.pdb" />
+					<Add library="tier0" />
+					<Add library="vstdlib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="const.h" />
+		<Unit filename="hl2sdk\bitbuf.cpp" />
+		<Unit filename="hl2sdk\networkvar.cpp" />
+		<Unit filename="hl2sdk\recipientfilters.cpp" />
+		<Unit filename="hl2sdk\strtools.cpp" />
+		<Unit filename="..\..\..\..\My SDK Files\HL2 Sdk\lib\public\tier0.lib" />
+		<Unit filename="..\..\..\..\..\..\..\sdk\HL2_EP2\lib\public\tier1.lib" />
+		<Unit filename="..\..\..\..\My SDK Files\HL2 Sdk\lib\public\vstdlib.lib" />
+		<Unit filename="..\..\..\..\My SDK Files\MySQL\lib\opt\mysqlclient.lib" />
+		<Unit filename="..\..\..\..\My SDK Files\MySQL\lib\opt\mysys.lib" />
+		<Unit filename="c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Lib\WS2_32.Lib" />
+		<Unit filename="..\..\..\..\My SDK Files\MySQL\lib\opt\zlib.lib" />
+		<Unit filename="..\..\..\..\My SDK Files\MySQL\lib\opt\mysqlclient.lib" />
+		<Unit filename="..\..\..\..\My SDK Files\MySQL\lib\opt\mysys.lib" />
+		<Unit filename="..\..\..\..\My SDK Files\MySQL\lib\opt\zlib.lib" />
+		<Unit filename="AdminCmdManager.cpp" />
+		<Unit filename="AdminCommands.cpp" />
+		<Unit filename="AdminMenu.cpp" />
+		<Unit filename="BATCore.cpp" />
+		<Unit filename="BATInterface.cpp" />
+		<Unit filename="BATMaps.cpp" />
+		<Unit filename="BATMenu.cpp" />
+		<Unit filename="BATSQL.cpp" />
+		<Unit filename="cvars.cpp" />
+		<Unit filename="LoadAdminAccounts.cpp" />
+		<Unit filename="MapVote.cpp" />
+		<Unit filename="MenuRconCmds.cpp" />
+		<Unit filename="MessageBuffer.cpp" />
+		<Unit filename="ModInfo.cpp" />
+		<Unit filename="PreformanceSampler.cpp" />
+		<Unit filename="PublicMessages.cpp" />
+		<Unit filename="ReservedSlotsSystem.cpp" />
+		<Unit filename="SharedFunctions.cpp" />
+		<Unit filename="SigScan.cpp" />
+		<Unit filename="SourceModInterface.cpp" />
+		<Unit filename="TaskSystem.cpp" />
+		<Unit filename="Translation.cpp" />
+		<Unit filename="Utils.cpp" />
+		<Unit filename="AdminCmdManager.h" />
+		<Unit filename="AdminCommands.h" />
+		<Unit filename="AdminMenu.h" />
+		<Unit filename="BATCore.h" />
+		<Unit filename="BATInterface.h" />
+		<Unit filename="BATMaps.h" />
+		<Unit filename="BATMenu.h" />
+		<Unit filename="BATSQL.h" />
+		<Unit filename="cvars.h" />
+		<Unit filename="LoadAdminAccounts.h" />
+		<Unit filename="MapVote.h" />
+		<Unit filename="MenuRconCmds.h" />
+		<Unit filename="MessageBuffer.h" />
+		<Unit filename="meta_hooks.h" />
+		<Unit filename="ModInfo.h" />
+		<Unit filename="PreformanceSampler.h" />
+		<Unit filename="PublicMessages.h" />
+		<Unit filename="ReservedSlotsSystem.h" />
+		<Unit filename="SigScan.h" />
+		<Unit filename="SourceModInterface.h" />
+		<Unit filename="TaskSystem.h" />
+		<Unit filename="Translation.h" />
+		<Unit filename="Utils.h" />
+		<Unit filename="csdm\recipientfilters.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
